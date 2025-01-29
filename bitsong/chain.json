@@ -125,6 +125,10 @@
         "provider": "ChainTools"
       },
       {
+        "address": "https://bitsong-rpc.noders.services/",
+        "provider": "[NODERS]"
+      },
+      {
         "address": "https://rpc.bitsong.quokkastake.io",
         "provider": "\ud83d\udc39 Quokka Stake"
       },
@@ -179,6 +183,10 @@
         "provider": "\ud83d\udc39 Quokka Stake"
       },
       {
+        "address": "https://bitsong-api.noders.services/",
+        "provider": "[NODERS]"
+      },
+      {
         "address": "https://rest-bitsong.architectnodes.com",
         "provider": "Architect Nodes"
       },
@@ -227,6 +235,10 @@
       {
         "address": "grpc.bitsong.safeblock.space:9090",
         "provider": "Safe Block"
+      },
+      {
+        "address": "bitsong-grpc.noders.services:20090",
+        "provider": "[NODERS]"
       },
       {
         "address": "grpc.bitsong.mathnodes.com:9092",
