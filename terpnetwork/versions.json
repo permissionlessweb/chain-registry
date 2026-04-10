@@ -143,6 +143,22 @@
         "type": "cometbft",
         "version": "0.38.21"
       },
+      "next_version_name": "v5.1.0"
+    },
+    {
+      "name": "v5.1.0",
+      "recommended_version": "v5.1.0",
+      "compatible_versions": [
+        "v5.1.0"
+      ],
+      "consensus": {
+        "type": "cometbft",
+        "version": "0.38.21"
+      },
+      "binaries": {
+        "linux/amd64": "https://github.com/terpnetwork/terp-core/releases/download/v5.1.0/terpd-linux-amd64",
+        "linux/arm64": "https://github.com/terpnetwork/terp-core/releases/download/v5.1.0/terpd-linux-arm64"
+      },
       "next_version_name": ""
     }
   ]

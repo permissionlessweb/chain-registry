@@ -15,18 +15,17 @@
     "genesis": {
       "genesis_url": "https://raw.githubusercontent.com/terpnetwork/networks/main/mainnet/morocco-1/genesis.json"
     },
-    "recommended_version": "v5.0.3",
+    "recommended_version": "v5.1.0",
     "compatible_versions": [
-      "v5.0.2",
-      "v5.0.3"
+      "v5.1.0"
     ],
     "consensus": {
       "type": "cometbft",
       "version": "0.38.21"
     },
     "binaries": {
-      "linux/amd64": "https://github.com/terpnetwork/terp-core/releases/download/v5.0.3/terpd-linux-amd64",
-      "linux/arm64": "https://github.com/terpnetwork/terp-core/releases/download/v5.0.3/terpd-linux-arm64"
+      "linux/amd64": "https://github.com/terpnetwork/terp-core/releases/download/v5.1.0terpd-linux-amd64",
+      "linux/arm64": "https://github.com/terpnetwork/terp-core/releases/download/v5.1.0/terpd-linux-arm64"
     }
   },
   "fees": {
@@ -50,9 +49,9 @@
   "peers": {
     "seeds": [
       {
-        "id": "d8256642afae77264bcce1631d51233a9d00249b",
-        "address": "terp-mainnet-seed.itrocket.net:13656",
-        "provider": "itrocket.net"
+        "id": "tbd",
+        "address": "seed.terp.network:26656",
+        "provider": "TerpNET Foundation"
       },
       {
         "id": "5f5cfac5c38506fbb4275c19e87c4107ec48808d",
@@ -67,9 +66,14 @@
     ],
     "persistent_peers": [
       {
-        "id": "a81dc3bf1bb1c3837b768eeb82659eecc971890b",
-        "address": "terp-mainnet-peer.itrocket.net:13656",
-        "provider": "itrocket.net"
+        "id": "58e01ab84eb931a82a024324520021d2e075ec67",
+        "address": "185.248.24.16:29656",
+        "provider": "zelivsky | apollo"
+      },
+      {
+        "id": "b04c5acab1c821b95f26662d8ebb7ccd4a39e97f",
+        "address": "144.76.97.251:34656",
+        "provider": "AlxVoy | Anode"
       }
     ]
   },
@@ -80,22 +84,18 @@
         "provider": "TerpNet Foundation"
       },
       {
-        "address": "https://terp-mainnet-rpc.itrocket.net:443",
-        "provider": "itrocket.net"
-      },
-      {
         "address": "https://terp.rpc.nodex.one:443",
         "provider": "nodex.one"
+      },
+      {
+        "address": "https://terp.rpc.m.anode.team:443",
+        "provider": "anode.team"
       }
     ],
     "rest": [
       {
-        "address": "https://api-mainnet.terp.network.io:443",
-        "provider": "ZenChainLabs"
-      },
-      {
-        "address": "https://terp-mainnet-api.itrocket.net:443",
-        "provider": "itrocket.net"
+        "address": "https://terp.api.m.anode.team:443",
+        "provider": "Anode Team"
       },
       {
         "address": "https://terp.api.nodex.one:443",
@@ -104,6 +104,10 @@
       {
         "address": "https://terp.api.m.stavr.tech",
         "provider": "🔥STAVR🔥"
+      },
+      {
+        "address": "http://185.248.24.16:29657",
+        "provider": "Zelivsky | Apollo"
       }
     ],
     "grpc": [
@@ -112,16 +116,12 @@
         "provider": "TerpNet Foundation"
       },
       {
-        "address": "https://grpc.terp.nodestake.top:443",
-        "provider": "NodeStake"
-      },
-      {
-        "address": "terp-mainnet-grpc.itrocket.net:13090",
-        "provider": "itrocket.net"
-      },
-      {
         "address": "https://terp.grpc.nodex.one:443",
         "provider": "nodex.one"
+      },
+      {
+        "address": "http://terp.grpc.m.anode.team",
+        "provider": "Anode Team"
       }
     ]
   },
@@ -131,12 +131,6 @@
       "url": "https://ping.pub/terp",
       "tx_page": "https://ping.pub/terp/tx/${txHash}",
       "account_page": "https://ping.pub/terp/account/{$accountAddress}"
-    },
-    {
-      "kind": "ping.pub",
-      "url": "https://explorer.nodestake.top",
-      "tx_page": "https://explorer.nodestake.top/terp/tx/${txHash}",
-      "account_page": "https://explorer.nodestake.top/terp/account/{$accountAddress}"
     },
     {
       "kind": "🔥STAVR🔥",
