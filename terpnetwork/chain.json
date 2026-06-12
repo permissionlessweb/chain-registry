@@ -71,10 +71,11 @@
         "provider": "zelivsky | apollo"
       },
       {
-        "id": "b04c5acab1c821b95f26662d8ebb7ccd4a39e97f",
-        "address": "144.76.97.251:34656",
-        "provider": "AlxVoy | Anode"
+        "id": "a43c1415bc3a58b0881d2c5c2abe857b45f0a7e7",
+        "address": "135.181.60.157:26716",
+        "provider": "Chaintools"
       }
+   
     ]
   },
   "apis": {
@@ -90,6 +91,10 @@
       {
         "address": "https://terp.rpc.m.anode.team:443",
         "provider": "anode.team"
+      },
+      {
+        "address": "https://rpc.terp.chaintools.tech:443",
+        "provider": "Chaintools"
       }
     ],
     "rest": [
@@ -102,17 +107,17 @@
         "provider": "nodex.one"
       },
       {
-        "address": "https://terp.api.m.stavr.tech",
-        "provider": "🔥STAVR🔥"
+        "address": "https://api-mainnet.terp.network:443",
+        "provider": "TerpNet Foundation"
       },
       {
-        "address": "http://185.248.24.16:29657",
-        "provider": "Zelivsky | Apollo"
+        "address": "https://api.terp.chaintools.tech:443",
+        "provider": "Chaintools"
       }
     ],
     "grpc": [
       {
-        "address": "grpc-mainnet.terp.network.io:443",
+        "address": "grpc-mainnet.terp.network:443",
         "provider": "TerpNet Foundation"
       },
       {
@@ -137,11 +142,18 @@
       "url": "https://explorer.stavr.tech/Terp-Mainnet",
       "tx_page": "https://explorer.stavr.tech/Terp-Mainnet/tx/${txHash}",
       "account_page": "https://explorer.stavr.tech/Terp-Mainnet/account/{$accountAddress}"
+    },
+    {
+      "kind": "🔥STAVR🔥",
+      "url": "https://explorer.chaintools.tec/",
+      "tx_page": "https://explorer.chaintools.tech/terp/tx/${txHash}",
+      "account_page": "https://explorer.chaintools.tech/terp/account/{$accountAddress}"
     }
   ],
   "images": [
     {
-      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.png"
+      "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.png",
+      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.svg"
     }
   ]
 }

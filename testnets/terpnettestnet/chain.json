@@ -5,10 +5,10 @@
   "network_type": "testnet",
   "pretty_name": "Terp-Network",
   "chain_type": "cosmos",
-  "chain_id": "90u-4",
+  "chain_id": "90u-5",
   "bech32_prefix": "terp",
   "daemon_name": "terpd",
-  "node_home": "$HOME/.terp",
+  "node_home": "$HOME/.terpd",
   "key_algos": [
     "secp256k1"
   ],
@@ -16,7 +16,7 @@
   "fees": {
     "fee_tokens": [
       {
-        "denom": "uthiolx",
+        "denom": "uthiol",
         "fixed_min_gas_price": 0.5,
         "low_gas_price": 0.75,
         "average_gas_price": 1,
@@ -27,69 +27,72 @@
   "staking": {
     "staking_tokens": [
       {
-        "denom": "uterpx"
+        "denom": "uterp"
       }
     ]
   },
   "codebase": {
     "git_repo": "https://github.com/terpnetwork/terp-core",
-    "recommended_version": "v4.2.2",
+    "recommended_version": "v5-zk-testnet",
     "consensus": {
       "type": "cometbft",
       "version": "0.37.2"
     },
     "compatible_versions": [
-      "v4.2.0",
-      "v4.2.1",
-      "v4.2.2"
+      "v5-zk-testnet"
     ],
     "genesis": {
       "genesis_url": "https://raw.githubusercontent.com/terpnetwork/networks/main/testnet/90u-4/genesis.json"
     },
     "binaries": {
-      "linux/amd64": "https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-amd64",
-      "linux/arm64": "https://github.com/terpnetwork/terp-core/releases/download/v4.2.0/terpd-linux-arm64"
+      "linux/amd64": "https://github.com/terpnetwork/terp-core/releases/download/v5-zk-testnet/terpd-linux-amd64",
+      "linux/arm64": "https://github.com/terpnetwork/terp-core/releases/download/v5-zk-testnet/terpd-linux-amd64"
     }
   },
   "peers": {
     "seeds": [],
     "persistent_peers": [
       {
-        "id": "9e194721d68dd28d3c4b625c17b2cb287ef30327",
+        "id": "",
         "address": "testnet-peer.terp.network:26656"
       },
       {
-        "id": "15f5bc75be9746fd1f712ca046502cae8a0f6ce7",
-        "address": "terp-testnet.nodejumper.io:30656"
+        "id": "",
+        "address": "peer-testnet.terp.network:26656"
       }
     ]
   },
   "apis": {
     "rpc": [
       {
-        "address": "https://testnet-rpc.terp.network:443/",
-        "provider": "Terpnet Foundation"
+        "provider": "TerpNet Foundation",
+        "address": "testnet-rpc.terp.network:443"
+      },
+      {
+        "provider": "TerpNet Foundation",
+        "address": "rpc-testnet.terp.network:443"
       }
     ],
     "rest": [
       {
-        "address": "https://testnet-api.terp.network:443/",
-        "provider": "Terpnet Foundation"
+        "provider": "TerpNet Foundation",
+        "address": "testnet-api.terp.network:443"
+      },
+      {
+        "provider": "TerpNet Foundation",
+        "address": "api-testnet.terp.network:443"
       }
     ],
-    "grpc": []
+    "grpc": [
+      {
+        "provider": "TerpNet Foundation",
+        "address": "testnet-grpc.terp.network:443"
+      },
+      {
+        "provider": "TerpNet Foundation",
+        "address": "grpc-testnet.terp.network:443"
+      }
+    ]
   },
-  "explorers": [
-    {
-      "kind": "Ping Pub",
-      "url": "https://explorer.nodestake.top/terp-testnet",
-      "tx_page": "https://explorer.nodestake.top/terp-testnet/tx/${txHash}"
-    },
-    {
-      "kind": "NODEXPLORER",
-      "url": "https://explorer.nodexcapital.com",
-      "tx_page": "https://explorer.nodexcapital.com/terp/tx/${txHash}",
-      "account_page": "https://explorer.nodexcapital.com/terp/account/{$accountAddress}"
-    }
-  ]
+  "explorers": []
 }
