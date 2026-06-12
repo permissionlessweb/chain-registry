@@ -163,6 +163,10 @@
       {
         "address": "https://provenance-mainnet-rpc.shazoes.xyz",
         "provider": "Shazoes"
+      },
+      {
+        "address": "https://provenance.api.pocket.network",
+        "provider": "Pocket Network"
       }
     ],
     "rest": [
@@ -209,6 +213,10 @@
       {
         "address": "https://provenance-mainnet-api.shazoes.xyz",
         "provider": "Shazoes"
+      },
+      {
+        "address": "https://provenance.api.pocket.network",
+        "provider": "Pocket Network"
       }
     ],
     "grpc": [
@@ -295,12 +303,30 @@
       "url": "https://mainnet.explorer.aviaone.com/provenance",
       "tx_page": "https://mainnet.explorer.aviaone.com/provenance/tx/${txHash}",
       "account_page": "https://mainnet.explorer.aviaone.com/provenance/account/${accountAddress}"
+    },
+    {
+      "kind": "moon-runners",
+      "url": "https://moon-runners.net/provenance/mainnet",
+      "tx_page": "https://moon-runners.net/provenance/mainnet/finder?search=${txHash}",
+      "account_page": "https://moon-runners.net/provenance/mainnet/finder?search=${accountAddress}"
     }
   ],
   "images": [
     {
       "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.png",
       "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/provenance/images/prov.svg"
+    }
+  ],
+  "snapshots": [
+    {
+      "provider": "High Stakes 🇨🇭",
+      "url": "https://tools.highstakes.ch/snapshots/provenance",
+      "latest_url": "https://tools.highstakes.ch/files/provenance_goleveldb.tar.gz",
+      "type": "pruned",
+      "db_backend": "goleveldb",
+      "frequency": "every 3h",
+      "compression": "tar",
+      "checksum_available": true
     }
   ]
 }

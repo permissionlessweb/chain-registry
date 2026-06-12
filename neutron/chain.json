@@ -137,6 +137,15 @@
   "apis": {
     "rpc": [
       {
+        "address": "https://rpc.neutron.solva.solutions:443",
+        "provider": "solva.solutions"
+      },
+      {
+        "address": "https://rpc-archive.neutron.solva.solutions:443",
+        "provider": "solva.solutions",
+        "archive": true
+      },
+      {
         "address": "https://rpc-lb.neutron.org",
         "provider": "Neutron"
       },
@@ -186,6 +195,15 @@
       }
     ],
     "rest": [
+      {
+        "address": "https://rest.neutron.solva.solutions:443",
+        "provider": "solva.solutions"
+      },
+      {
+        "address": "https://rest-archive.neutron.solva.solutions:443",
+        "provider": "solva.solutions",
+        "archive": true
+      },
       {
         "address": "https://rest-lb.neutron.org",
         "provider": "Neutron"
@@ -241,7 +259,16 @@
     ],
     "grpc": [
       {
-        "address": "grpc-lb.neutron.org:80",
+        "address": "grpc.neutron.solva.solutions:443",
+        "provider": "solva.solutions"
+      },
+      {
+        "address": "grpc-archive.neutron.solva.solutions:443",
+        "provider": "solva.solutions",
+        "archive": true
+      },
+      {
+        "address": "grpc-lb.neutron.org:443",
         "provider": "Neutron"
       },
       {
@@ -302,6 +329,12 @@
       "url": "https://validatorinfo.com/networks/neutron/overview",
       "validator_page": "https://validatorinfo.com/networks/neutron/validators",
       "proposal_page": "https://validatorinfo.com/networks/neutron/governance"
+    },
+    {
+      "kind": "Valopers",
+      "url": "https://neutron.valopers.com/",
+      "tx_page": "https://neutron.valopers.com/transactions/${txHash}",
+      "account_page": "https://neutron.valopers.com/account/${accountAddress}"
     }
   ],
   "images": [

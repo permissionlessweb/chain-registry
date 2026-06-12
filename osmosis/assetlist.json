@@ -248,8 +248,7 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg"
         }
-      ],
-      "coingecko_id": "axlwbtc"
+      ]
     },
     {
       "description": "Tether's USD stablecoin on Axelar",
@@ -2135,7 +2134,6 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/vidulum/images/vdl.svg"
         }
       ],
-      "coingecko_id": "vidulum",
       "keywords": [
         "osmosis_unstable"
       ]
@@ -2447,8 +2445,7 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/umee/images/umee.svg"
         }
-      ],
-      "coingecko_id": "umee"
+      ]
     },
     {
       "description": "The native token of Gravity Bridge",
@@ -15425,8 +15422,7 @@
         {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/LAB.png"
         }
-      ],
-      "coingecko_id": "mad-scientists"
+      ]
     },
     {
       "description": "BackBone Labs Liquid Staked OSMO",
@@ -25371,8 +25367,7 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/beezee/images/vdl.svg"
         }
-      ],
-      "coingecko_id": "vidulum"
+      ]
     },
     {
       "description": "Real power moves quietly.",
@@ -26486,17 +26481,21 @@
       "description": "The native token of Hippo Protocol.",
       "denom_units": [
         {
-          "denom": "ibc/955E5E0BED298F85956121C3BD627CEB12B858A9EB7C1ED24B1515A658318CE4",
+          "denom": "ibc/24C3429B835A84801EFEFC28C8CBDF787C4067D971CB6E510BB525FA462CCE1C",
           "exponent": 0,
           "aliases": [
             "ahp"
           ]
+        },
+        {
+          "denom": "hp",
+          "exponent": 18
         }
       ],
       "type_asset": "ics20",
-      "base": "ibc/955E5E0BED298F85956121C3BD627CEB12B858A9EB7C1ED24B1515A658318CE4",
+      "base": "ibc/24C3429B835A84801EFEFC28C8CBDF787C4067D971CB6E510BB525FA462CCE1C",
       "name": "Hippo Protocol",
-      "display": "ahp",
+      "display": "hp",
       "symbol": "HP",
       "traces": [
         {
@@ -26504,11 +26503,11 @@
           "counterparty": {
             "chain_name": "hippoprotocol",
             "base_denom": "ahp",
-            "channel_id": "channel-0"
+            "channel_id": "channel-1"
           },
           "chain": {
-            "channel_id": "channel-104931",
-            "path": "transfer/channel-104931/ahp"
+            "channel_id": "channel-110277",
+            "path": "transfer/channel-110277/ahp"
           }
         }
       ],
@@ -28078,7 +28077,6 @@
       "logo_URIs": {
         "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/maxBTC.svg"
       },
-      "coingecko_id": "maxbtc",
       "images": [
         {
           "image_sync": {
@@ -28137,6 +28135,112 @@
         "website": "https://greystoneinc.io"
       },
       "type_asset": "sdk.coin"
+    },
+    {
+      "description": "Nether (NTHR) is the utility token of the Underworld NFT ecosystem, issued via tokenfactory on the Cosmos Hub. NTHR powers the NecroVault, a soft-staking platform where holders of Underworld collections earn rewards while keeping their NFTs in their wallets. Fixed supply: 21,000.",
+      "extended_description": "Nether is the core utility and value token of the Underworld ecosystem — built around NFTs, soft staking, rewards, and on-chain interaction inside the NecroVault. Forged on Cosmos and tied directly to the Underworld economy, NTHR connects multiple systems together: NFT staking rewards, loot boxes and reward mechanics, vault perks and VIP access, future ecosystem utilities, and liquidity incentives and staking rewards. Unlike passive tokens, NTHR is designed to be used. Holders can stake it inside the NecroVault to unlock deeper rewards, multipliers, and exclusive features tied to the Underworld collections and platform mechanics. The ecosystem currently includes multiple NFT collections that generate rewards through the NecroVault soft staking system, where users can earn tokens like BANE, RUIN, and NTHR while keeping their NFTs liquid in their wallets. With a limited supply of only 21,000 tokens, NTHR acts as the long-term asset of the Underworld — powering future expansions, reward systems, vault mechanics, raffles, ecosystem distributions, and experimental game theory features.",
+      "denom_units": [
+        {
+          "denom": "ibc/EFAAE3AD05AA79647A1587E363A11B6126CC83C8C0593171BB1892A39EB550DF",
+          "exponent": 0
+        },
+        {
+          "denom": "nthr",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/EFAAE3AD05AA79647A1587E363A11B6126CC83C8C0593171BB1892A39EB550DF",
+      "name": "Nether",
+      "display": "nthr",
+      "symbol": "NTHR",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "cosmoshub",
+            "base_denom": "factory/cosmos1wdja2gcsesyl07raq9jm3rcvu0sse5zkev0h8m/Nether",
+            "channel_id": "channel-141"
+          },
+          "chain": {
+            "channel_id": "channel-0",
+            "path": "transfer/channel-0/factory/cosmos1wdja2gcsesyl07raq9jm3rcvu0sse5zkev0h8m/Nether"
+          }
+        }
+      ],
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "cosmoshub",
+            "base_denom": "factory/cosmos1wdja2gcsesyl07raq9jm3rcvu0sse5zkev0h8m/Nether"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/nthr.png",
+          "theme": {
+            "circle": true
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/nthr.png"
+      },
+      "socials": {
+        "website": "https://www.necrovault.com/",
+        "x": "https://x.com/Underworld_NFTs"
+      }
+    },
+    {
+      "description": "WOLO is the fixed-supply native token of WoloChain.",
+      "extended_description": "WOLO powers AoE2WAR betting, staking, rewards, and settlement for Age of Empires II matches.",
+      "denom_units": [
+        {
+          "denom": "ibc/D09120C7085DFA412DF77608DAD3A4797F5F097A038DA0C2E1D1426FC9CD836D",
+          "exponent": 0,
+          "aliases": [
+            "uwolo"
+          ]
+        },
+        {
+          "denom": "wolo",
+          "exponent": 6
+        }
+      ],
+      "type_asset": "ics20",
+      "base": "ibc/D09120C7085DFA412DF77608DAD3A4797F5F097A038DA0C2E1D1426FC9CD836D",
+      "name": "WOLO",
+      "display": "wolo",
+      "symbol": "WOLO",
+      "traces": [
+        {
+          "type": "ibc",
+          "counterparty": {
+            "chain_name": "wolochain",
+            "base_denom": "uwolo",
+            "channel_id": "channel-0"
+          },
+          "chain": {
+            "channel_id": "channel-110224",
+            "path": "transfer/channel-110224/uwolo"
+          }
+        }
+      ],
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/wolochain/images/wolo.png"
+      },
+      "images": [
+        {
+          "image_sync": {
+            "chain_name": "wolochain",
+            "base_denom": "uwolo"
+          },
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/wolochain/images/wolo.png",
+          "theme": {
+            "circle": true
+          }
+        }
+      ],
+      "socials": {
+        "website": "https://aoe2war.com"
+      }
     }
   ]
 }
